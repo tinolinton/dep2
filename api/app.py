@@ -32,7 +32,7 @@ class F1Score(Metric):
         self.recall.reset_states()
 
 # --- Load trained model ---
-model_path = r'MobileNetV2_best_model.h5'
+model_path = r'Custom_CNN_best_model.h5'
 model = tf.keras.models.load_model(model_path, custom_objects={'f1_score': F1Score})
 
 # --- Serve favicon ---
